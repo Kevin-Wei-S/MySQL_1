@@ -1,0 +1,41 @@
+Chapter1 Review
+
+1.说说你了解的常见的数据库
+	
+	Ans: Oracle、MySQL、MSSQL、DB2、PGSQL(PostgreSQL)、MongoDB、MariaDB、Redis、Solr.
+	
+2.谈谈你对MySQL历史、特点的理解
+
+	1. 由瑞典公司所開發
+	2. 開源的、關聯型數據庫
+	3. 市場占有率排名第二
+	4. 一開始被Sun公司所收購(2008), 爾後Oracle收購Sun公司(2009), MySQL也間接被吸收.
+	5. MySQL創始人擔心Oracle將MySQL轉為非開源, 進而推出MariaDB.
+	6. 支持千萬級別數據量的存儲, 為大型的數據庫.
+	7. 2016年, MySQL推出8.0.0版本
+
+3.说说你对DB、DBMS、SQL的理解
+
+	DB: DataBase 即數據庫
+	DBMS: DataBase-Management-System 即數據庫管理系統
+	SQL: Structured-Query-Language 即結構搜尋語言
+	
+	MySQL數據庫服務器, 安裝了MySQL DBMS來操作管理DB, 使用的語言是SQL.
+
+4.你知道哪些非关系型数据库的类型呢？（了解）
+	
+	Key-value: Redis
+	Document: MongoDB
+	Search engine: Elasticsearch、Solr
+	Wide column: Cassandra、HBase
+	Graph: Neo4j
+
+5.表与表的记录之间存在哪些关联关系?
+
+	ORM: Object-Relational-Mapping
+
+	四種關係:
+		1. 一對一(通常出現欄位過多, 拆表.)
+		2. 一對多(一個部門對應多個員工)
+		3. 多對多(選課系統, 學生對應多個科目, 科目亦對應多個學生)
+		4. 自我引用(員工表內主管欄位引用員工表)

@@ -1,0 +1,9 @@
+Notes
+
+JOIN = INNER JOIN(內連接沒有分左右 因為是找出共有)
+
+LEFT JOIN = LEFT OUTER JOIN
+(將"LEFT JOIN"的左表視為主表, 左表有幾條數據, 合併表就有幾條數據)
+
+RIGHT JOIN = RIGHT OUTER JOIN
+(將"RIGHT JOIN"的右表視為主表, 右表有幾條數據, 合併表亦有幾條數據) 

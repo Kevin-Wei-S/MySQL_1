@@ -1,0 +1,54 @@
+第02章_MySQL环境搭建
+讲师：尚硅谷-宋红康（江湖人称：康师傅）
+官网： http://www.atguigu.com
+
+1.安装好MySQL之后在windows系统中哪些位置能看到MySQL?
+	
+	1. MySQL DBMS的安裝路徑: D:\develop_tools\MySQL\MySQL Server 8.0
+	2. MySQL 數據庫文件的存放路徑: C:\ProgramData\MySQL\MySQL Server 8.0\Data
+	3. MySQL 配置文件的存放路徑: C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
+	4. MySQL服務(要想通過客戶端訪問MySQL數據庫伺服器, 必須保證MySQL服務為開啟狀態)
+	5. MySQL-Path環境變量
+	
+2.卸载MySQL主要卸载哪几个位置的内容？
+
+	1. 控制台-解除安裝MySQL DBMS
+	2. 刪除資料夾中的數據庫文件
+	3. 移除MySQL-Path環境變量
+	4. 使用regedit在註冊表中將MySQL服務移除
+	5. 記得重新啟動電腦
+
+3.能够独立完成MySQL8.0、MySQL5.7版本的下载、安装、配置 （掌握）
+
+	問題不大
+
+4.MySQL5.7在配置完以后，如何修改配置文件？
+
+	修改配置文件原因:
+			
+		因為MySQL5.7數據庫的預設編碼為Latin, 無法辨識Latin1以外的文字,
+		故需手動修改MySQL5.7配置文件, 使資料庫及表的預設編碼為UTF-8.
+
+	如何修改:
+	
+		在C:\ProgramData/MySQL/MySQL Server 5.7/my.ini中
+		mysql:
+			添加default-character-set=utf8
+		mysqld:
+			添加character-set-server=utf8
+			添加collation-server=utf8_general_ci
+		修改完記得重啟服務
+			1. 到服務GUI重啟
+			2. 在cmd中根據命令行重啟
+				net stop mysql57
+				net start mysql57
+
+5.熟悉常用的数据库管理和操作的工具
+
+	1. Windows cmd
+	2. Mysql cmd
+	3. MySQL-GUI
+		w. Workbench
+		x. Navicat
+		y. SQLyog
+		z. DBeaver
